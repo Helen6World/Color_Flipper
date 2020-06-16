@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F2F7FE;
+}
+nav {
+  background-color: #fff;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+  padding: 1% 0;
+}
+.nav_center {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6vw;
+}
+.nav_center h4 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+.nav_links li a:first-of-type {
+  margin-right: 0.5vw;
+}
+.active_page {
+  color: #25AFA1;
+}
+.container {
+  width: 100%;
+  max-width: 30%;
+  margin: 0 auto;
+  margin-top: 15%;
+  text-align: center;
+}
+.container h2 {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  padding: 3% 0;
+  font-size: 2.5vw;
+  border-radius: 10px;
+}
+.container h2 span {
+  font-family: 'Abel', sans-serif;
+  color: #30E4D2;
+  font-size: 2vw;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+a:hover {
+  border-bottom: 0.1vw solid #000;
+  transition: 0.2s;
+}
+.active_page:hover {
+  border-bottom: 0.1vw solid #25AFA1;
+}
+.container button {
+  background-color: #fff;
+  border: 0.2vw solid #000;
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 10%;
+  width: 30%;
+  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2vw;
+  color: #000;
+  transition: 0.2s;
+}
+.container button:hover {
+  background-color: #000;
+  border: 0.2vw solid #fff;
+  color: #fff;
+  transition: 0.6s;
+}
+.container button:active {
+  background-color: #DD4641;
+  border: 0.2vw solid #fff;
+  color: #fff;
+  transition: 0.1s;
+}
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+  padding: 0.6% 1.6%;
+}
+footer p {
+  font-size: 1vw;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 3% 0;
+  }
+  .nav_center {
+    font-size: 2.2vw;
+  }
+  .container {
+    max-width: 40%;
+  }
+  .container h2 {
+    padding: 5% 0;
+    font-size: 3.5vw;
+
+  }
+  .container h2 span {
+    font-size: 3.3vw;
+  }
+  .container button {
+
+    padding: 3%;
+    width: 35%;
+    font-size: 2vw;
+  }
+  footer {
+
+    padding: 1% 2%;
+  }
+  footer p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 5% 0;
+  }
+  .nav_center {
+    font-size: 3.5vw;
+  }
+  .container {
+    max-width: 55%;
+    margin-top: 25%;
+  }
+  .container h2 {
+    padding: 6% 0;
+    font-size: 5.2vw;
+
+  }
+  .container h2 span {
+    font-size: 3vw;
+  }
+  .container button {
+
+    padding: 4%;
+    width: 40%;
+    font-size: 3vw;
+  }
+  footer {
+
+    padding: 2% 3%;
+  }
+  footer p {
+    font-size: 3vw;
+  }
+}
